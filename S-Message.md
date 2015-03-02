@@ -13,7 +13,7 @@ Like other messages the parameter is base64 encoded.
 
 Converted to hex, this is: 
 
-    0000000000: 00 04 40 00 00 00 07 91  00 01 66 
+    0000000000: 00 04 40 00 00 00 07 91  00 01 66
 
 The first part of the s command  consists of following fields:
 
@@ -371,7 +371,7 @@ This can be decoded as following
 
 ### Duty Cycle
 
-868MHz radio comms is limited to 1% transmission, i.e. 36 seconds in each hour. The cube monitors this, and returns the hex representation of the permitted duty cycle as a percentage. When this percentage reaches 100% it will queue S commands in memory or reject additional commands.
+868MHz radio comms is limited to 1% transmission, i.e. 36 seconds in each hour. The cube monitors this, and returns the percentage of the permitted duty cycle as a hex number (so 1A = 26%). When this percentage reaches 100% it will queue S commands in memory or reject additional commands.
 
 ### Command Result
 
