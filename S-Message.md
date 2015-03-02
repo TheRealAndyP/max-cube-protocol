@@ -371,7 +371,7 @@ This can be decoded as following
 
 ### Duty Cycle
 
-868MHz radio comms is limited to 1% transmission, i.e. 36 seconds in each hour. The cube monitors this, and returns the percentage of the permitted duty cycle as a hex number (so 1A = 26%). When this percentage reaches 100% it will queue S commands in memory or reject additional commands.
+868MHz radio comms is limited to 1% transmission, i.e. 36 seconds in each hour. The cube monitors this, and returns the percentage of the permitted duty cycle as a hex number (so 1A = 26%). When this percentage reaches 100% it will queue 's' commands in memory until the memory slots (see below) are exhausted, then reject additional commands.
 
 ### Command Result
 
@@ -380,4 +380,4 @@ This can be decoded as following
 
 ### Free Memory Slots
 
-The hex representation of the free memory slots
+The number of free memory slots as a hex number, so "31" is 49 free slots. When there are no free slots left it will reject additional 's' commands.
