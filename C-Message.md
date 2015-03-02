@@ -69,7 +69,7 @@ Position   Length   Information
 01         3        Address of device
 04         1        Device Type
 05         1        Room ID
-06         1        Firmware version
+06         1        Firmware version (in BCD, 0x14 = v1.4)
 07         1        Test Result
 08         10       Serial Number
 ```
