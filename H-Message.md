@@ -52,7 +52,7 @@ This is not sure (means i was not able to verify this by reviewing the decompile
 
 ### Duty Cycle
 
-The duty cycle as a hex number.
+The duty cycle in %, as a hex number (so 1a = 26%)
 
 ### Free Memory Slots
 
